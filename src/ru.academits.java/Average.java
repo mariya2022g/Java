@@ -1,11 +1,15 @@
 package ru.academits.java;
 
+import java.util.Scanner;
+
 public class Average {
 
     public static void main(String[] args) {
-
-        int i = 3;
-        int b = 17;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите число а: ");
+        int i = scanner.nextInt();
+        System.out.print("Введите число b: ");
+        int b = scanner.nextInt();
 
         double average = getAverage(i, b);
         System.out.println("Среднее арифметическое чисел = " + average);
