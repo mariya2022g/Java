@@ -31,12 +31,14 @@ public class Average {
     public static double getEvenAverage(int a, int b) {
         int sum = 0;
         int i = a;
+        int k = 0;
         while (i <= b) {
             if (i % 2 == 0) {
                 sum = sum + i;
+                k++;
             }
-            ++i;
+            i++;
         }
-        return (double) sum / (b - a + 1);
+        return (double) sum / k;
     }
 }
