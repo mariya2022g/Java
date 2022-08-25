@@ -24,10 +24,6 @@ public class Main_Person {
 
         System.out.println("Объект класса Person был создан: "+ person);
 
-        System.out.println("Год рождения: " + getYearOfBirth(person));
-    }
-
-    private static int getYearOfBirth(Person person){
-        return 2022 - person.getAge();
+        System.out.println("Год рождения: " + person.getYearOfBirth());
     }
 }

@@ -1,5 +1,7 @@
 package ООР;
 
+import java.time.LocalDate;
+
 public class Person {
     private String name;
     private String middleName;
@@ -48,5 +50,9 @@ public class Person {
     @Override
     public String toString() {
         return "{" + familyName + " " + name + " " + middleName + "}";
+    }
+
+    public int getYearOfBirth(){
+        return LocalDate.now().getYear() - age;
     }
 }
